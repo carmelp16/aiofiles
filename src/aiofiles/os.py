@@ -59,3 +59,6 @@ if hasattr(os, "sendfile"):
 if hasattr(os, "statvfs"):
     __all__ += ["statvfs"]
     statvfs = wrap(os.statvfs)
+if hasattr(os, "chmod"):
+    __all__ += ["chmod"]
+    chmod = wrap(os.chmod)
